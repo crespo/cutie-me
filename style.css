@@ -1,6 +1,6 @@
 @font-face {
     font-family: CutiePatootie;
-    src: url(./fonts/CutiePatootieSKinny-8zXZ.ttf);
+    src: url('./fonts/CutiePatootieSKinny-8zXZ.ttf') format('truetype');
 }
 
 html, body {
