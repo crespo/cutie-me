@@ -8,4 +8,4 @@ Simple personal website made with HTMl and CSS.
 
 <p>About me snapshot:</p>
 
-![Preview](/imgs/preview.png)
+![Preview](/imgs/preview2.png)
