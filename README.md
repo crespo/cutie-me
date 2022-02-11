@@ -1,6 +1,11 @@
 # Personal Website 👨‍💻
-Simple and cute personal website =)
+Simple personal website made with HTMl and CSS.
 
-<p>Preview:</p>
+<p>Main page snapshot:</p>
+
+![Preview](/imgs/preview.png)
+
+
+<p>About me snapshot:</p>
 
 ![Preview](/imgs/preview.png)
