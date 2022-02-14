@@ -10,28 +10,29 @@
 }
 
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #fff;
+    background-color: #ffffff77;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #cccccc; 
+    background-color: #00000077;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #b3b3b3; 
+    background-color: #25252577; 
 }
 
 ::-webkit-scrollbar-thumb:active {
-    background-color: #999999; 
+    background-color: #59595977;
 }
 
 body {
     overflow-x: hidden;
     width: 100%;
+    animation: colorchange 20s infinite;
 }
 
 #main-page{
@@ -41,7 +42,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #e6e6e6;
 }
 
 #main-page #hero-content{
@@ -58,6 +58,19 @@ body {
     font-size: 20px;
 }
 
+#contact img{
+    margin: 15px;
+    width: 4vw;
+}
+
+.socialicons{
+    transition: filter .3s ease-in-out;
+}
+
+.socialicons:hover{
+    filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(75deg) brightness(107%) contrast(103%);
+}
+
 .btn{
     text-decoration: none;
     margin-top: 20px;
@@ -65,14 +78,18 @@ body {
     border: 2px solid #000000;
     padding: 10px;
     border-radius: 5px;
+    transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out;
 }
 
 .btn:hover{
-    background-color: #555555;
+    border-color: #000;
+    background-color: #000;
     color: #fff;
 }
 
 #about-me{
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -105,69 +122,49 @@ body {
     font-weight: 300;
 }
 
-#curriculo{
-    width: 8rem;
-    border: solid #000 3px;
-    font-size: 20px;
+@keyframes colorchange{
+    0%   {background: rgb(147, 135, 255);}
+    33%  {background: rgb(255, 182, 122);}
+    66%  {background: rgb(255, 120, 120);}
+    100% {background: rgb(128, 147, 255);}
 }
 
-#curriculo:hover{
-    background-color: #555555;
-    color: #fff;
+@media (max-width: 1200px) {
+    #contact img{
+        width: 6vw;
+    }
 }
 
-/* #main-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 700px;
-    width: 100%;
-    background-color: #e6e6e6;
-} */
-/* 
-.btn1 {
-    margin-top: 50px;
-    color: black;
-    border: 3px solid #555555;
-    border-radius: 5px;
-}
-  
-.btn1:hover {
-    background-color: #555555;
-    color: white;
-} */
- @media (max-width: 708px) {
+@media (max-width: 708px) {
 
     #hero-content .description{
         text-align: center;
     }
 
-     #contact img{
-         margin: 15px;
-         width: 15vw;
-     }
-
-     #about-me{
+    #about-me{
         flex-direction: column-reverse;
-     }
+    }
 
-     .left-side{
-         height: 60vh;
-     }
+    #contact img{
+        width: 12vw;
+    }
 
-     .right-side{
+    .left-side{
+        height: 60vh;
+    }
+
+    .right-side{
         margin-top: 30px;
-     }
+    }
 
-     .left-side .description{
+    .left-side .description{
         text-align: center;
         width: 70vw;
     }
-     .right-side img{
-         width: 40vw;
-     }
-     #main-page #hero-content .header{
-         font-size: 4rem;
-     }
- }
+    .right-side img{
+        width: 40vw;
+    }
+    #main-page #hero-content .header{
+        font-size: 4rem;
+    }
+}
