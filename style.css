@@ -32,7 +32,8 @@
 body {
     overflow-x: hidden;
     width: 100%;
-    animation: colorchange 20s infinite;
+    /* animation: colorchange 20s infinite; */
+    background-color: burlywood;
 }
 
 #main-page{
