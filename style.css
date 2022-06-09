@@ -32,8 +32,7 @@
 body {
     overflow-x: hidden;
     width: 100%;
-    /* animation: colorchange 20s infinite; */
-    background-color: burlywood;
+    background-color: #ffc6c6;
 }
 
 #main-page{
@@ -57,6 +56,7 @@ body {
 
 #main-page #hero-content .description{
     font-size: 20px;
+    text-align: center;
 }
 
 #contact img{
@@ -121,13 +121,6 @@ body {
 .left-side .description{
     width: 40vw;
     font-weight: 300;
-}
-
-@keyframes colorchange{
-    0%   {background: rgb(147, 135, 255);}
-    33%  {background: rgb(255, 182, 122);}
-    66%  {background: rgb(255, 120, 120);}
-    100% {background: rgb(128, 147, 255);}
 }
 
 @media (max-width: 1200px) {
